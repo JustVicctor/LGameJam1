@@ -1,12 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace LGameJam1.Scripts.Servers
 {
     public class DraggableServer : MonoBehaviour
     {
+        [NonSerialized]
         public GameObject _currentDraggable;
+        
         private void Awake()
         {
+            God.DraggableS = this;
+            DontDestroyOnLoad(this);
             Debug.Log("Draggable Server Awake");
         }
     }

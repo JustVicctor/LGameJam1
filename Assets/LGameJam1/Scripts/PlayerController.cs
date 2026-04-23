@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace LGameJam1.Scripts
@@ -9,6 +10,11 @@ namespace LGameJam1.Scripts
         {
             God.Player = this;
             Debug.Log("Player Controller Awake");
+        }
+
+        private void Start()
+        {
+            God.EventS.GameStarted();
         }
     }
 }

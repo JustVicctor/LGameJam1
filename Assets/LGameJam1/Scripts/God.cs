@@ -9,17 +9,10 @@ namespace LGameJam1.Scripts
         public static SceneServer SceneS;
         public static InputServer InputS;
         public static DraggableServer DraggableS;
+        public static DBServer DBS;
+        public static TimerServer TimerS;
+        public static StorageServer StorageS;
         
         public static PlayerController Player;
-
-        [RuntimeInitializeOnLoadMethod]
-        private static void Initialize()
-        {
-            var server = new GameObject("Servers");
-            EventS = server.AddComponent<EventServer>();
-            SceneS = server.AddComponent<SceneServer>();
-            InputS = server.AddComponent<InputServer>();
-            DraggableS = server.AddComponent<DraggableServer>();
-        }
     }
 }

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 379d61fb460d4663a98c2bfdfee2c5f1, type: 3}
+  m_Name: ResourceDB
+  m_EditorClassIdentifier: 
+  resources:
+  - type: 1
+    usage: 1
+    usagePower: 0
+    tickToCraft: 2
+    texture: {fileID: 2800000, guid: 6068823f269c40044ad7efec27c2bcb0, type: 3}
+    recipe: []
+    craftCount: 1
+  - type: 2
+    usage: 0
+    usagePower: 0
+    tickToCraft: 2
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe: []
+    craftCount: 1

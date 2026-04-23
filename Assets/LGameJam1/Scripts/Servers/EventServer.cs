@@ -3,10 +3,12 @@ using UnityEngine;
 
 namespace LGameJam1.Scripts.Servers
 {
+    [DefaultExecutionOrder(-1)]
     public class EventServer : MonoBehaviour
     {
-        public event Action PlayerInited = delegate { };
-        public event Action WorldInited = delegate { };
+        public Action GameStarted = delegate { };
+        public Action TickTime = delegate { };
+        public Action GameEnded = delegate { };
 
         private void Awake()
         {
