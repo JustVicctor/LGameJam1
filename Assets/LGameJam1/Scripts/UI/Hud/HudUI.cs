@@ -1,5 +1,4 @@
-﻿using System;
-using LGameJam1.Scripts.Station;
+﻿using LGameJam1.Scripts.Station;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

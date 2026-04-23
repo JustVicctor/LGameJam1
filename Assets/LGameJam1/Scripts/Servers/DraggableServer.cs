@@ -9,6 +9,8 @@ namespace LGameJam1.Scripts.Servers
         public GameObject _currentDraggable;
 
         [NonSerialized]
+        public GameObject _currentOutline;
+        [NonSerialized]
         public GameObject _currentSelected;
         
         private void Awake()

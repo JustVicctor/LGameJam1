@@ -64,16 +64,19 @@ namespace LGameJam1.Scripts.Station
         public void ShowCraft()
         {
             God.Hud.ShowCraftImage(craftImage);
-            if (God.DraggableS._currentSelected != null)
-                Destroy(God.DraggableS._currentSelected);
+            if (God.DraggableS._currentOutline != null)
+            {
+                Destroy(God.DraggableS._currentOutline);
+            }
+
             var outline = new GameObject();
             var image = outline.AddComponent<SpriteRenderer>();
             image.sprite = outlineImage;
-            image.sortingOrder = GetComponent<SpriteRenderer>().sortingOrder;
-            outline.transform.position = transform.position;
+            image.sortingOrder = GetComponent<SpriteRenderer>().sortingOrder + 1;
+            outline.transform.position = transform.position + Vector3.down * 0.1f;
             outline.transform.rotation = transform.rotation;
-            outline.transform.localScale = transform.localScale * 1f;
-            God.DraggableS._currentSelected = outline;
+            outline.transform.localScale = transform.localScale;
+            God.DraggableS._currentOutline = outline;
         }
 
         private void OnTickToCraft()
