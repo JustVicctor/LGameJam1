@@ -112,14 +112,20 @@ namespace LGameJam1.Scripts.Station
         {
             Workers.Add(draggableComponent);
             if (_curTickToCraft != 0)
+            {
                 _isCrafted = true;
+                slider.ShowSlider();
+            }
         }
 
         public void RemoveWorker(DraggableComponent draggableComponent)
         {
             Workers.Remove(draggableComponent);
             if (Workers.Count == 0)
+            {
+                slider.HideSlider();
                 _isCrafted = false;
+            }
         }
     }
 }
