@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: WaveDB
   m_EditorClassIdentifier: 
   waves:
-  - WaveAtk: 70
-    WaveDef: 50
-    WaveTime: 30
-    HeroCount: 2
-  - WaveAtk: 360
-    WaveDef: 360
-    WaveTime: 60
-    HeroCount: 3
-  - WaveAtk: 1510
-    WaveDef: 2270
-    WaveTime: 90
-    HeroCount: 4
+  - WaveAtk: 90
+    WaveDef: 60
+    WaveTime: 120
+    WorkerCount: 2
+  - WaveAtk: 240
+    WaveDef: 190
+    WaveTime: 140
+    WorkerCount: 3
+  - WaveAtk: 410
+    WaveDef: 500
+    WaveTime: 160
+    WorkerCount: 4
+  - WaveAtk: 530
+    WaveDef: 800
+    WaveTime: 180
+    WorkerCount: 4

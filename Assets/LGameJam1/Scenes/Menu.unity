@@ -803,6 +803,10 @@ PrefabInstance:
       propertyPath: duration
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 566859365857079241, guid: a5669b90296f5f84d986e51321a8c92c, type: 3}
+      propertyPath: waveDB
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c29dd920fba8cd47b94fbed16fdd115, type: 2}
     - target: {fileID: 1155374001054615420, guid: a5669b90296f5f84d986e51321a8c92c, type: 3}
       propertyPath: m_Name
       value: Boot
@@ -847,6 +851,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6088521426584467614, guid: a5669b90296f5f84d986e51321a8c92c, type: 3}
+      propertyPath: resourceDB
+      value: 
+      objectReference: {fileID: 11400000, guid: bf0b3e6e173ab444199f7c118e5e5b61, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
