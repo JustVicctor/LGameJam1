@@ -17,5 +17,6 @@ namespace LGameJam1.Scripts
         
         public static PlayerController Player;
         public static HudUI Hud;
+        public static WorkersServer WorkerS { get; set; }
     }
 }

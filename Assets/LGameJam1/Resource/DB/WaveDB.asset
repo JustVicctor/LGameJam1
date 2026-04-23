@@ -16,9 +16,12 @@ MonoBehaviour:
   - WaveAtk: 70
     WaveDef: 50
     WaveTime: 30
+    HeroCount: 2
   - WaveAtk: 360
     WaveDef: 360
     WaveTime: 60
+    HeroCount: 3
   - WaveAtk: 1510
     WaveDef: 2270
     WaveTime: 90
+    HeroCount: 4

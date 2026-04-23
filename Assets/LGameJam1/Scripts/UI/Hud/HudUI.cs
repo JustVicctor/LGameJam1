@@ -40,6 +40,11 @@ namespace LGameJam1.Scripts.UI.Hud
         public Image WinScreen;
         public Image EndScreen;
         public Image BattleScreen;
+        
+        public GameObject worker0;
+        public GameObject worker1;
+        public GameObject worker2;
+        public GameObject worker3;
 
         private void Awake()
         {
@@ -169,6 +174,39 @@ namespace LGameJam1.Scripts.UI.Hud
                 spellCount * spellPower +
                 runeCount * runePower;
             overallDefText.text = overall.ToString();
+        }
+
+        public void ShowWorkers(int workerCount)
+        {
+            switch (workerCount)
+            {
+                case 1:
+                {
+                    worker0.SetActive(true);
+                    break;
+                }
+                case 2:
+                {
+                    worker0.SetActive(true);
+                    worker1.SetActive(true);
+                    break;
+                }
+                case 3:
+                {
+                    worker0.SetActive(true);
+                    worker1.SetActive(true);
+                    worker2.SetActive(true);
+                    break;
+                }
+                case 4:
+                {
+                    worker0.SetActive(true);
+                    worker1.SetActive(true);
+                    worker2.SetActive(true);
+                    worker3.SetActive(true);
+                    break;
+                }
+            }
         }
     }
 }
