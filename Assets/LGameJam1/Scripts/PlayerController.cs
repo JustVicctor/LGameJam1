@@ -40,11 +40,17 @@ namespace LGameJam1.Scripts
             var usrTTK = (float)def / (float)Math.Max(wave.WaveAtk, 1);
 
             WinState = usrTTK > atkTTK;
+            
+            God.Hud.battleEnAtk.text = "АТК. " + wave.WaveAtk.ToString();
+            God.Hud.battleEnDef.text = "DEF. " + wave.WaveDef.ToString();
+            God.Hud.battleUsrAtk.text = "АТК. " + atk.ToString();
+            God.Hud.battleUsrDef.text = "DEF. " + def.ToString();
             God.SceneS.ShowBattle();
         }
 
         private void OnWaveStarted()
         {
+            God.StorageS.ClearStorage();
             WinState = false;
             God.SceneS.HideScreens();
             God.EventS.atkItemChanged();

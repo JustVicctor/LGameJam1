@@ -40,6 +40,10 @@ namespace LGameJam1.Scripts.UI.Hud
         public Image WinScreen;
         public Image EndScreen;
         public Image BattleScreen;
+        public TMP_Text battleUsrAtk;
+        public TMP_Text battleUsrDef;
+        public TMP_Text battleEnAtk;
+        public TMP_Text battleEnDef;
         
         public GameObject worker0;
         public GameObject worker1;

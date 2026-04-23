@@ -6,6 +6,7 @@ namespace LGameJam1.Scripts.UI.Screend
     {
         public void OnClick()
         {
+            God.WaveS.UpWaves();
             God.EventS.waveStarted();
         }
     }

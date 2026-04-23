@@ -59,7 +59,6 @@ namespace LGameJam1.Scripts.Servers
                 if (curTick >= tickAmount)
                 {
                     active = false;
-                    God.WaveS.UpWaves();
                     God.EventS.waveEnded();
                 }
                 timer = 0;

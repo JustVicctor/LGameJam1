@@ -82,6 +82,14 @@ namespace LGameJam1.Scripts.Servers
             return true;
         }
 
+        public void ClearStorage()
+        {
+            foreach (var kvp in storage)
+            {
+                kvp.Value.count = 0;
+            }
+        }
+
         public void GetOverall(out uint atk, out uint def)
         {
             {

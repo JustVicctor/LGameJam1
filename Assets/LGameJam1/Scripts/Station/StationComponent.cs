@@ -32,11 +32,19 @@ namespace LGameJam1.Scripts.Station
         {
             God.DBS.GetResource(resourceType, out _resource);
             God.EventS.TickTime += OnTickToCraft;
+            God.EventS.waveStarted += OnWaveStarted;
+        }
+
+        private void OnWaveStarted()
+        {
+            _isCrafted = false;
+            _curTickToCraft = 0;
         }
 
         private void OnDisable()
         {
             God.EventS.TickTime -= OnTickToCraft;
+            God.EventS.waveStarted -= OnWaveStarted;
         }
 
         private void FixedUpdate()
