@@ -31,6 +31,7 @@ namespace LGameJam1.Scripts.Servers
 
         private void OnClick(InputAction.CallbackContext obj)
         {
+            God.AudioS.PlayClick();
             if (God.DraggableS._currentDraggable != null)
                 return;
             

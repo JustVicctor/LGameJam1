@@ -1,6 +1,5 @@
 using LGameJam1.Scripts.Servers;
 using LGameJam1.Scripts.UI.Hud;
-using UnityEngine;
 
 namespace LGameJam1.Scripts
 {
@@ -18,5 +17,7 @@ namespace LGameJam1.Scripts
         public static PlayerController Player;
         public static HudUI Hud;
         public static WorkersServer WorkerS { get; set; }
+
+        public static AudioServer AudioS;
     }
 }
