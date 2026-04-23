@@ -51,7 +51,7 @@ namespace LGameJam1.Scripts.Servers
                 return;
             
             timer += Time.deltaTime;
-            if (timer >= duration/tickAmount)
+            if (timer >= duration)
             {
                 God.EventS.timerChanged();
                 God.EventS.TickTime();
