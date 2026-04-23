@@ -12,6 +12,20 @@ namespace LGameJam1.Scripts
             Debug.Log("Player Controller Awake");
         }
 
+        private void OnEnable()
+        {
+            God.EventS.DayEnd += CheckStorage;
+        }
+
+        private void OnDisable()
+        {
+            God.EventS.DayEnd -= CheckStorage;
+        }
+
+        private void CheckStorage()
+        {
+        }
+
         private void Start()
         {
             God.EventS.GameStarted();

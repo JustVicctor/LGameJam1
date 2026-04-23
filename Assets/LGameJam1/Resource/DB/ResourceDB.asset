@@ -16,14 +16,23 @@ MonoBehaviour:
   - type: 1
     usage: 1
     usagePower: 0
-    tickToCraft: 2
+    tickToCraft: 1
     texture: {fileID: 2800000, guid: 6068823f269c40044ad7efec27c2bcb0, type: 3}
     recipe: []
     craftCount: 1
   - type: 2
     usage: 0
     usagePower: 0
-    tickToCraft: 2
+    tickToCraft: 1
     texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
     recipe: []
+    craftCount: 1
+  - type: 5
+    usage: 0
+    usagePower: 0
+    tickToCraft: 1
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 1
+      count: 1
     craftCount: 1

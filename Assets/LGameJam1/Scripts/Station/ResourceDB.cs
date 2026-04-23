@@ -9,7 +9,20 @@ namespace LGameJam1.Scripts.Station
     {
         None,
         Wood,
-        Stone
+        Stone,
+        Leather,
+        Ore,
+        Planks,
+        Tools,
+        Clothes,
+        Ingots,
+        Armor,
+        Weapon,
+        Shield,
+        Mana,
+        Spell,
+        Golem,
+        Rune
     }
 
     [Serializable]

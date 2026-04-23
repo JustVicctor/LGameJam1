@@ -41,7 +41,7 @@ namespace LGameJam1.Scripts.Station
             if (Workers.Count == 0)
                 return;
             
-            if (God.StorageS.TryGetResources(_resource.recipe))
+            if (God.StorageS.TryGetResources(_resource.recipe, (uint)Workers.Count))
             {
                 _isCrafted = true;
             }

@@ -32,26 +32,26 @@ namespace LGameJam1.Scripts.Servers
             storage[resourceType] += count;
         }
 
-        public bool CheckResources(List<ResourceCount> resourceRecipe)
+        public bool CheckResources(List<ResourceCount> resourceRecipe, uint count = 1)
         {
             foreach (var resource in resourceRecipe)
             {
-                if (!storage.TryGetValue(resource.type, out var count))
+                if (!storage.TryGetValue(resource.type, out var storageCount))
                     return false;
-                if (count < resource.count)
+                if (storageCount < resource.count * count)
                     return false;
             }
             return true;
         }
 
-        public bool TryGetResources(List<ResourceCount> resourceRecipe)
+        public bool TryGetResources(List<ResourceCount> resourceRecipe, uint count = 1)
         {
-            if (!CheckResources(resourceRecipe))
+            if (!CheckResources(resourceRecipe, count))
                 return false;
             
             foreach (var resource in resourceRecipe)
             {
-                storage[resource.type] -= resource.count;
+                storage[resource.type] -= resource.count * count;
             }
             return true;
         }

@@ -7,7 +7,10 @@ namespace LGameJam1.Scripts.Servers
     public class EventServer : MonoBehaviour
     {
         public Action GameStarted = delegate { };
+        
         public Action TickTime = delegate { };
+        public Action DayEnd = delegate { };
+        
         public Action GameEnded = delegate { };
 
         private void Awake()

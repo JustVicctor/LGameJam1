@@ -38,12 +38,10 @@ namespace LGameJam1.Scripts.UI.Workers
                 {
                     station.AddWorker(this);
                     _curStation = station;
+                    return;
                 }
             }
-            else
-            {
-                transform.SetParent(_parentAfterDrag);
-            }
+            transform.SetParent(_parentAfterDrag);
         }
     }
 }
