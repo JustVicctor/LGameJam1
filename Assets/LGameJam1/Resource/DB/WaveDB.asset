@@ -15,7 +15,7 @@ MonoBehaviour:
   waves:
   - WaveAtk: 12
     WaveDef: 5
-    WaveTime: 30
+    WaveTime: 31
   - WaveAtk: 72
     WaveDef: 36
     WaveTime: 60

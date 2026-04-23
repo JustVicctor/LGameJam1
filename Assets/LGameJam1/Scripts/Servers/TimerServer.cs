@@ -5,15 +5,15 @@ namespace LGameJam1.Scripts.Servers
 {
     public class TimerServer : MonoBehaviour
     {
-        [SerializeField]
-        public int tickAmount = 30;
 
         [SerializeField, Tooltip("In Seconds")]
-        public float duration = 60;
+        public float duration = 45;
 
         private bool active = false;
         private float timer = 0;
         
+        [NonSerialized]
+        public int tickAmount = 30;
         [NonSerialized]
         public int curTick = 0;
         
@@ -26,14 +26,23 @@ namespace LGameJam1.Scripts.Servers
 
         private void OnEnable()
         {
-            God.EventS.GameStarted += Active;
-            God.EventS.GameEnded += Deactive;
+            God.EventS.GameStarted += OnGameStarted;
+            God.EventS.GameEnded += OnGameEnded;
+            God.EventS.waveStarted += OnWaveStarted;
         }
 
         private void OnDisable()
         {
-            God.EventS.GameStarted -= Active;
-            God.EventS.GameEnded -= Deactive;
+            God.EventS.GameStarted -= OnGameStarted;
+            God.EventS.GameEnded -= OnGameEnded;
+            God.EventS.waveStarted -= OnWaveStarted;
+        }
+
+        private void OnWaveStarted()
+        {
+            var wave = God.WaveS.GetWave();
+            tickAmount = wave.WaveTime;
+            God.EventS.timerChanged();
         }
 
         private void Update()
@@ -49,19 +58,20 @@ namespace LGameJam1.Scripts.Servers
                 curTick++;
                 if (curTick >= tickAmount)
                 {
-                    God.EventS.DayEnd();
+                    God.EventS.waveEnded();
                     curTick = 0;
+                    God.WaveS.UpWaves();
                 }
                 timer = 0;
             }
         }
         
-        public void Active()
+        public void OnGameStarted()
         {
             active = true;
         }
 
-        public void Deactive()
+        public void OnGameEnded()
         {
             active = false;
         }

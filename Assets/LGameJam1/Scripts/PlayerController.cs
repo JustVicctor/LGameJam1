@@ -14,25 +14,43 @@ namespace LGameJam1.Scripts
 
         private void OnEnable()
         {
-            God.EventS.DayEnd += CheckStorage;
+            God.EventS.waveStarted += OnWaveStarted;
+            God.EventS.waveEnded += OnWaveEnded;
         }
 
         private void OnDisable()
         {
-            God.EventS.DayEnd -= CheckStorage;
+            God.EventS.waveStarted -= OnWaveStarted;
+            God.EventS.waveEnded -= OnWaveEnded;
         }
-
-        private void CheckStorage()
-        {
-        }
-
+        
         private void Start()
         {
             God.EventS.GameStarted();
             God.EventS.timerChanged();
             God.EventS.atkItemChanged();
             God.EventS.defItemChanged();
-            God.EventS.waveChanged();
+            God.EventS.waveStarted();
+        }
+        
+        private void OnWaveEnded()
+        {
+            God.TimerS.enabled = false;
+            
+            God.StorageS.GetOverall(out uint atk, out var def);
+            var wave = God.WaveS.GetWave();
+
+            var atkTTK = wave.WaveDef / Math.Max(atk, 1);
+            var usrTTK = def / Math.Max(wave.WaveAtk, 1);
+
+            if (usrTTK > atkTTK)
+                God.SceneS.ShowWin();
+            else
+                God.SceneS.ShowEnd();
+        }
+
+        private void OnWaveStarted()
+        {
         }
     }
 }

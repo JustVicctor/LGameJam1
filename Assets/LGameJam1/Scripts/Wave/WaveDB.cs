@@ -9,7 +9,7 @@ namespace LGameJam1.Scripts.Wave
     {
         public uint WaveAtk = 0;
         public uint WaveDef = 0;
-        public uint WaveTime = 0;
+        public int WaveTime = 0;
     }
     
     [CreateAssetMenu(fileName = "WaveDB", menuName = "ScriptableObjects/WaveDB", order = 1)]

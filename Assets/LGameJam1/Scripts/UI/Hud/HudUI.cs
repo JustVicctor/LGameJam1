@@ -27,13 +27,15 @@ namespace LGameJam1.Scripts.UI.Hud
         public TMP_Text defItem5;
         public TMP_Text defItem6;
         public TMP_Text defItem7;
-        
-        public TMP_Text waveAtkText;
-        public TMP_Text waveDefText;
 
         public TMP_Text timerText;
 
         private Image craftImage;
+        private Image enemyImage;
+
+        public Image EnemyImage01;
+        public Image EnemyImage02;
+        public Image EnemyImage03;
 
         private void Awake()
         {
@@ -45,7 +47,7 @@ namespace LGameJam1.Scripts.UI.Hud
             God.EventS.atkItemChanged += OnAtkItemChanged;
             God.EventS.defItemChanged += OnDefItemChanged;
             God.EventS.timerChanged += OnTimerChanged;
-            God.EventS.waveChanged += OnWaveChanged;
+            God.EventS.waveStarted += OnWaveStarted;
         }
 
         public void ShowCraftImage(Image newImage)
@@ -58,10 +60,30 @@ namespace LGameJam1.Scripts.UI.Hud
             Debug.Log("Show Craft");
         }
 
-        private void OnWaveChanged()
+        private void OnWaveStarted()
         {
-            waveAtkText.text = 0.ToString();
-            waveDefText.text = 0.ToString();
+            if (enemyImage != null)
+                enemyImage.enabled = false;
+            
+            switch (God.WaveS.curWave)
+            {
+                case 0:
+                {
+                    enemyImage = EnemyImage01;
+                    break;
+                }
+                case 1:
+                {
+                    enemyImage = EnemyImage02;
+                    break;
+                }
+                case 2:
+                {
+                    enemyImage = EnemyImage03;
+                    break;
+                }
+            }
+            enemyImage.enabled = true;
         }
 
         private void OnTimerChanged()

@@ -81,5 +81,50 @@ namespace LGameJam1.Scripts.Servers
             }
             return true;
         }
+
+        public void GetOverall(out uint atk, out uint def)
+        {
+            {
+                God.StorageS.GetResourceCountAndValue(ResourceType.Stone, out uint stoneCount, out uint stonePower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Tools, out uint toolCount, out uint toolPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Ore, out uint oreCount, out uint orePower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Ingots, out uint ingotCount, out uint ingotPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Weapon, out uint weaponCount, out uint weaponPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Bow, out uint bowCount, out uint bowPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Spell, out uint spellCount, out uint spellPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Rune, out uint runeCount, out uint runePower);
+
+                atk =
+                    stoneCount * stonePower +
+                    toolCount * toolPower +
+                    oreCount * orePower +
+                    ingotCount * ingotPower +
+                    weaponCount * weaponPower +
+                    bowCount * bowPower +
+                    spellCount * spellPower +
+                    runeCount * runePower;
+            }
+
+            {
+                God.StorageS.GetResourceCountAndValue(ResourceType.Wood, out uint stoneCount, out uint stonePower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Planks, out uint toolCount, out uint toolPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Shield, out uint oreCount, out uint orePower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Leather, out uint ingotCount, out uint ingotPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Clothes, out uint weaponCount, out uint weaponPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Armor, out uint bowCount, out uint bowPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Mana, out uint spellCount, out uint spellPower);
+                God.StorageS.GetResourceCountAndValue(ResourceType.Golem, out uint runeCount, out uint runePower);
+
+                def =
+                    stoneCount * stonePower +
+                    toolCount * toolPower +
+                    oreCount * orePower +
+                    ingotCount * ingotPower +
+                    weaponCount * weaponPower +
+                    bowCount * bowPower +
+                    spellCount * spellPower +
+                    runeCount * runePower;
+            }
+        }
     }
 }
