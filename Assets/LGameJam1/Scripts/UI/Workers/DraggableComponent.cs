@@ -33,7 +33,7 @@ namespace LGameJam1.Scripts.UI.Workers
         public void OnBeginDrag(PointerEventData eventData)
         {
             _parentAfterDrag = transform.parent;
-            transform.SetParent(transform.root);
+            // transform.SetParent(transform.root);
             transform.SetAsLastSibling();
         }
 

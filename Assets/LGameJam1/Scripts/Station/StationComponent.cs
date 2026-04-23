@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using LGameJam1.Scripts.UI.Slider;
 using LGameJam1.Scripts.UI.Workers;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,6 +23,8 @@ namespace LGameJam1.Scripts.Station
         
         private Resource _resource;
         private uint _curTickToCraft = 0;
+        
+        public SliderUI slider;
 
         private void Awake()
         {
@@ -39,6 +42,8 @@ namespace LGameJam1.Scripts.Station
         {
             _isCrafted = false;
             _curTickToCraft = 0;
+            slider.ResetSlider();
+            slider.HideSlider();
             Workers.Clear();
         }
 
@@ -58,6 +63,7 @@ namespace LGameJam1.Scripts.Station
             
             if (God.StorageS.TryGetResources(_resource.recipe, (uint)Workers.Count))
             {
+                slider.ShowSlider();
                 _isCrafted = true;
             }
         }
@@ -86,9 +92,12 @@ namespace LGameJam1.Scripts.Station
                 return;
             
             _curTickToCraft++;
+            slider.SetSlider((float)_curTickToCraft / (float)_resource.tickToCraft);
             if (_curTickToCraft == _resource.tickToCraft)
             {
                 _curTickToCraft = 0;
+                slider.ResetSlider();
+                slider.HideSlider();
                 DoCraft();
             }
         }
