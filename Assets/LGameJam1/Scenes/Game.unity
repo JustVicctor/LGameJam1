@@ -762,6 +762,7 @@ MonoBehaviour:
   resourceType: 16
   craftImage: {fileID: 288500346}
   outlineImage: {fileID: 21300000, guid: 57f5ec4b0d753274f8980468ad66386e, type: 3}
+  resourceImage: {fileID: 21300000, guid: 52f5a7443ed2f2343b4f49967549472b, type: 3}
   slider: {fileID: 473898412}
 --- !u!60 &156096258
 PolygonCollider2D:
@@ -2509,6 +2510,7 @@ MonoBehaviour:
   resourceType: 4
   craftImage: {fileID: 79422894}
   outlineImage: {fileID: 21300000, guid: 8ec06f095af342941838fb13c3b034cd, type: 3}
+  resourceImage: {fileID: 21300000, guid: 29038ddb54603084ab5ccf7f08535bc3, type: 3}
   slider: {fileID: 1225563629}
 --- !u!60 &425159270
 PolygonCollider2D:
@@ -3067,6 +3069,7 @@ MonoBehaviour:
   resourceType: 3
   craftImage: {fileID: 1748504395}
   outlineImage: {fileID: 21300000, guid: 5dd044fb54f9a3f44b063fbeb59960d3, type: 3}
+  resourceImage: {fileID: 21300000, guid: e3dbc88f1a6ad3b43b6fe7832e5b2d85, type: 3}
   slider: {fileID: 1677974692}
 --- !u!60 &455952868
 PolygonCollider2D:
@@ -3929,6 +3932,7 @@ MonoBehaviour:
   resourceType: 10
   craftImage: {fileID: 440031797}
   outlineImage: {fileID: 21300000, guid: e8ef9aa6c28800c4e85841e7474c1f6a, type: 3}
+  resourceImage: {fileID: 21300000, guid: bb376ac42d0fe5247856450fe2b7bec1, type: 3}
   slider: {fileID: 778983541}
 --- !u!60 &504221720
 PolygonCollider2D:
@@ -5638,6 +5642,7 @@ MonoBehaviour:
   resourceType: 14
   craftImage: {fileID: 412006413}
   outlineImage: {fileID: 21300000, guid: 94a60ac1545dc9b4baaf11cd733fcf56, type: 3}
+  resourceImage: {fileID: 21300000, guid: ec99ef0a6fd5b774b8e83c1a1430e013, type: 3}
   slider: {fileID: 742650610}
 --- !u!60 &743198351
 PolygonCollider2D:
@@ -7303,6 +7308,7 @@ MonoBehaviour:
   resourceType: 5
   craftImage: {fileID: 2081527479}
   outlineImage: {fileID: 21300000, guid: 54a1cbb2a0d268d48baa91411341d3c9, type: 3}
+  resourceImage: {fileID: 21300000, guid: 609abce8a16d63349b518d34f5f2c0ed, type: 3}
   slider: {fileID: 1212144869}
 --- !u!60 &929443500
 PolygonCollider2D:
@@ -7741,6 +7747,7 @@ MonoBehaviour:
   resourceType: 1
   craftImage: {fileID: 774666466}
   outlineImage: {fileID: 21300000, guid: e28fe2a8131558c43bbe4ddaabbc6535, type: 3}
+  resourceImage: {fileID: 21300000, guid: eafc9234a5a1ada4f84bc95f1914471e, type: 3}
   slider: {fileID: 862420972}
 --- !u!60 &971163338
 PolygonCollider2D:
@@ -8374,6 +8381,7 @@ MonoBehaviour:
   resourceType: 15
   craftImage: {fileID: 1720665302}
   outlineImage: {fileID: 21300000, guid: 5ee532b2c21ab8d4bb02069f897c2996, type: 3}
+  resourceImage: {fileID: 21300000, guid: ffb7830c26300c441b85375b8fd631a3, type: 3}
   slider: {fileID: 260166366}
 --- !u!60 &1048146444
 PolygonCollider2D:
@@ -8736,6 +8744,7 @@ MonoBehaviour:
   resourceType: 7
   craftImage: {fileID: 1258233872}
   outlineImage: {fileID: 21300000, guid: fb275be31a209ca43907dce5bdb712b7, type: 3}
+  resourceImage: {fileID: 21300000, guid: 05e0d587ee6e1db45b4b58a5a977623b, type: 3}
   slider: {fileID: 1917751372}
 --- !u!60 &1078329658
 PolygonCollider2D:
@@ -11673,6 +11682,7 @@ MonoBehaviour:
   resourceType: 12
   craftImage: {fileID: 1235058441}
   outlineImage: {fileID: 21300000, guid: 05c79fa1cbd7bd74ca44692649244229, type: 3}
+  resourceImage: {fileID: 21300000, guid: 8b88581b2367fb84189f69cbfc01454e, type: 3}
   slider: {fileID: 1763448687}
 --- !u!60 &1476568266
 PolygonCollider2D:
@@ -11979,6 +11989,7 @@ MonoBehaviour:
   resourceType: 9
   craftImage: {fileID: 1425771579}
   outlineImage: {fileID: 21300000, guid: a5e26d200cd7dd24a94bc717ea7997a0, type: 3}
+  resourceImage: {fileID: 21300000, guid: 38c26cb5b672ecb48aae8a718e9aeb85, type: 3}
   slider: {fileID: 1391952912}
 --- !u!60 &1477424504
 PolygonCollider2D:
@@ -12335,6 +12346,7 @@ MonoBehaviour:
   resourceType: 11
   craftImage: {fileID: 1454019666}
   outlineImage: {fileID: 21300000, guid: b346c032a3b3a5c45956552284b2fb16, type: 3}
+  resourceImage: {fileID: 21300000, guid: 60e9bff9aa4c2ed47b810ceda646c03f, type: 3}
   slider: {fileID: 540271453}
 --- !u!60 &1498478689
 PolygonCollider2D:
@@ -13222,6 +13234,7 @@ MonoBehaviour:
   resourceType: 13
   craftImage: {fileID: 727432559}
   outlineImage: {fileID: 21300000, guid: eba040cbc01fc114a94d13ecc049fb40, type: 3}
+  resourceImage: {fileID: 21300000, guid: 9c1852cad9b818442a22967a1acf97f3, type: 3}
   slider: {fileID: 931904100}
 --- !u!60 &1641335249
 PolygonCollider2D:
@@ -14293,6 +14306,7 @@ MonoBehaviour:
   resourceType: 2
   craftImage: {fileID: 1259829795}
   outlineImage: {fileID: 21300000, guid: 8173b3c4314eccb438909630d1a17a04, type: 3}
+  resourceImage: {fileID: 21300000, guid: 9cf4888cb52ad274987816a29fa576c6, type: 3}
   slider: {fileID: 2095599181}
 --- !u!60 &1772794388
 PolygonCollider2D:
@@ -14848,6 +14862,7 @@ MonoBehaviour:
   resourceType: 8
   craftImage: {fileID: 1841827765}
   outlineImage: {fileID: 21300000, guid: 03bd14279bbc5be428113d376d8078d7, type: 3}
+  resourceImage: {fileID: 21300000, guid: 084b321097145a0459c10f50c9689709, type: 3}
   slider: {fileID: 1724735185}
 --- !u!60 &1891345352
 PolygonCollider2D:
@@ -16234,6 +16249,7 @@ MonoBehaviour:
   resourceType: 6
   craftImage: {fileID: 335372399}
   outlineImage: {fileID: 21300000, guid: bcd258b56444ce74ab217231dd36eae1, type: 3}
+  resourceImage: {fileID: 21300000, guid: dc450c8ca1dd2d74abac4ddf031a8c97, type: 3}
   slider: {fileID: 878605061}
 --- !u!60 &2031097622
 PolygonCollider2D:

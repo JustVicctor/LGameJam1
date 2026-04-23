@@ -16,6 +16,8 @@ namespace LGameJam1.Scripts.Station
 
         public Sprite outlineImage;
         
+        public Sprite resourceImage;
+        
         [NonSerialized]
         public List<DraggableComponent> Workers;
 
@@ -36,10 +38,13 @@ namespace LGameJam1.Scripts.Station
             God.DBS.GetResource(resourceType, out _resource);
             God.EventS.TickTime += OnTickToCraft;
             God.EventS.waveStarted += OnWaveStarted;
+            
+            God.DraggableS._spirtesMap.Add(_resource.type, this);
         }
 
         private void OnWaveStarted()
         {
+            ResetSelected();
             _isCrafted = false;
             _curTickToCraft = 0;
             slider.ResetSlider();
@@ -68,13 +73,23 @@ namespace LGameJam1.Scripts.Station
             }
         }
 
-        public void ShowCraft()
+        private void ResetSelected()
         {
-            God.Hud.ShowCraftImage(craftImage);
             if (God.DraggableS._currentOutline != null)
             {
                 Destroy(God.DraggableS._currentOutline);
             }
+
+            foreach (var res in God.DraggableS._currentResoruses)
+            {
+                Destroy(res);
+            }
+        }
+
+        public void ShowCraft()
+        {
+            God.Hud.ShowCraftImage(craftImage);
+            ResetSelected();
 
             var outline = new GameObject();
             var image = outline.AddComponent<SpriteRenderer>();
@@ -84,6 +99,21 @@ namespace LGameJam1.Scripts.Station
             outline.transform.rotation = transform.rotation;
             outline.transform.localScale = transform.localScale;
             God.DraggableS._currentOutline = outline;
+
+            foreach (var res in _resource.recipe)
+            {
+                var stationComponent = God.DraggableS._spirtesMap[res.type];
+                var sprite = stationComponent.resourceImage;
+                var go = stationComponent.gameObject;
+                var spriteGO = new GameObject();
+                var spriteRenderer = spriteGO.AddComponent<SpriteRenderer>();
+                spriteRenderer.sprite = sprite;
+                spriteRenderer.sortingOrder = go.GetComponent<SpriteRenderer>().sortingOrder + 1;
+                spriteGO.transform.position = go.transform.position + Vector3.down * 0.05f;
+                spriteGO.transform.rotation = go.transform.rotation;
+                spriteGO.transform.localScale = go.transform.localScale;
+                God.DraggableS._currentResoruses.Add(spriteGO);
+            }
         }
 
         private void OnTickToCraft()
