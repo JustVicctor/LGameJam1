@@ -28,16 +28,12 @@ namespace LGameJam1.Scripts.Servers
         public void UpWaves()
         {
             curWave++;
-            if (curWave == 3)
+            if (curWave == waveDB.waves.Count)
                 SceneHelpers.MoveToMenu();
         }
 
         public Wave.Wave GetWave()
         {
-            if (curWave == 3)
-            {
-                // TODO: WIN
-            }
             return waveDB.waves[curWave];
         }
     }

@@ -1,4 +1,5 @@
-﻿using LGameJam1.Scripts.Helpers;
+﻿using System;
+using LGameJam1.Scripts.Helpers;
 using LGameJam1.Scripts.Station;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -10,7 +11,25 @@ namespace LGameJam1.Scripts.UI.Workers
     {
         private Transform _parentAfterDrag;
         private StationComponent _curStation;
-        
+
+        private Vector3 _defaultLocation;
+
+        private void OnEnable()
+        {
+            _defaultLocation = transform.position;
+            God.EventS.waveStarted += OnWaveStarted;
+        }
+
+        private void OnDisable()
+        {
+            God.EventS.waveStarted -= OnWaveStarted;
+        }
+
+        private void OnWaveStarted()
+        {
+            transform.position = _defaultLocation;
+        }
+
         public void OnBeginDrag(PointerEventData eventData)
         {
             _parentAfterDrag = transform.parent;

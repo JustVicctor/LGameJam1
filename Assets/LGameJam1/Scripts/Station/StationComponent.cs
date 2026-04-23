@@ -39,6 +39,7 @@ namespace LGameJam1.Scripts.Station
         {
             _isCrafted = false;
             _curTickToCraft = 0;
+            Workers.Clear();
         }
 
         private void OnDisable()
