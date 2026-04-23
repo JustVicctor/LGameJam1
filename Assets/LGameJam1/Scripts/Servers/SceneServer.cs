@@ -13,12 +13,24 @@ namespace LGameJam1.Scripts.Servers
 
         public void ShowWin()
         {
-            Debug.Log("Win");
+            God.Hud.WinScreen.gameObject.SetActive(true);
         }
 
         public void ShowEnd()
         {
-            Debug.Log("End");
+            God.Hud.EndScreen.gameObject.SetActive(true);
+        }
+        
+        public void ShowBattle()
+        {
+            God.Hud.BattleScreen.gameObject.SetActive(true);
+        }
+
+        public void HideScreens()
+        {
+            God.Hud.BattleScreen.gameObject.SetActive(false);
+            God.Hud.WinScreen.gameObject.SetActive(false);
+            God.Hud.EndScreen.gameObject.SetActive(false);
         }
     }
 }

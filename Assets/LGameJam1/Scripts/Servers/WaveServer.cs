@@ -1,4 +1,5 @@
 ﻿using System;
+using LGameJam1.Scripts.Helpers;
 using LGameJam1.Scripts.Wave;
 using UnityEngine;
 
@@ -27,6 +28,8 @@ namespace LGameJam1.Scripts.Servers
         public void UpWaves()
         {
             curWave++;
+            if (curWave == 3)
+                SceneHelpers.MoveToMenu();
         }
 
         public Wave.Wave GetWave()

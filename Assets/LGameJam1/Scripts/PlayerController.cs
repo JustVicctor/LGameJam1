@@ -6,6 +6,8 @@ namespace LGameJam1.Scripts
     [DefaultExecutionOrder(10)]
     public class PlayerController : MonoBehaviour
     {
+        public bool WinState = false;
+        
         private void Awake()
         {
             God.Player = this;
@@ -37,20 +39,14 @@ namespace LGameJam1.Scripts
             var atkTTK = (float)wave.WaveDef / (float)Math.Max(atk, 1);
             var usrTTK = (float)def / (float)Math.Max(wave.WaveAtk, 1);
 
-            if (usrTTK > atkTTK)
-            {
-                God.SceneS.ShowWin();
-                God.EventS.waveStarted();
-            }
-            else
-            {
-                God.SceneS.ShowEnd();
-                God.EventS.waveStarted();
-            }
+            WinState = usrTTK > atkTTK;
+            God.SceneS.ShowBattle();
         }
 
         private void OnWaveStarted()
         {
+            WinState = false;
+            God.SceneS.HideScreens();
             God.EventS.atkItemChanged();
             God.EventS.defItemChanged();
             God.EventS.timerChanged();

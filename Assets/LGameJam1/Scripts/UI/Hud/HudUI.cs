@@ -37,6 +37,10 @@ namespace LGameJam1.Scripts.UI.Hud
         public Image EnemyImage02;
         public Image EnemyImage03;
 
+        public Image WinScreen;
+        public Image EndScreen;
+        public Image BattleScreen;
+
         private void Awake()
         {
             God.Hud = this;
