@@ -8,12 +8,12 @@ namespace LGameJam1.Scripts.Servers
     public class InputServer : MonoBehaviour
     {
         private PlayerControls _controls;
+        public bool isEnabled = true;
 
         private void Awake()
         {
             God.InputS = this;
             DontDestroyOnLoad(this);
-            Debug.Log("Input Server Awake");
         }
 
         private void OnEnable()
@@ -32,7 +32,7 @@ namespace LGameJam1.Scripts.Servers
         private void OnClick(InputAction.CallbackContext obj)
         {
             God.AudioS.PlayClick();
-            if (God.DraggableS._currentDraggable != null)
+            if (!isEnabled)
                 return;
             
             var go = SceneHelpers.RayCastToWorld();

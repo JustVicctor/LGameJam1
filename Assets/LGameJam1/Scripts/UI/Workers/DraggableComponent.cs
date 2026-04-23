@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 namespace LGameJam1.Scripts.UI.Workers
 {
-    public class DraggableComponent : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+    public class DraggableComponent : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
     {
         private Transform _parentAfterDrag;
         private StationComponent _curStation;
@@ -61,6 +61,16 @@ namespace LGameJam1.Scripts.UI.Workers
                 }
             }
             transform.SetParent(_parentAfterDrag);
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            God.InputS.isEnabled = false;
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            God.InputS.isEnabled = true;
         }
     }
 }

@@ -25,7 +25,6 @@ namespace LGameJam1.Scripts.Helpers
             if (hit.collider != null)
             {
                 GameObject clickedObject = hit.collider.gameObject;
-                Debug.Log("Clicked on: " + clickedObject.name);
                 return clickedObject;
             }
             return null;
