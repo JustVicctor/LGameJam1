@@ -781,6 +781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 16
   craftImage: {fileID: 288500346}
+  outlineImage: {fileID: 1879993879187556664, guid: 57f5ec4b0d753274f8980468ad66386e, type: 3}
 --- !u!1 &199417796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,6 +2351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 4
   craftImage: {fileID: 79422894}
+  outlineImage: {fileID: 8693232492393112788, guid: 8ec06f095af342941838fb13c3b034cd, type: 3}
 --- !u!1 &431892254
 GameObject:
   m_ObjectHideFlags: 0
@@ -2909,6 +2911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 3
   craftImage: {fileID: 1748504395}
+  outlineImage: {fileID: -7260599953399280735, guid: 5dd044fb54f9a3f44b063fbeb59960d3, type: 3}
 --- !u!1 &468833025
 GameObject:
   m_ObjectHideFlags: 0
@@ -3551,6 +3554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 10
   craftImage: {fileID: 440031797}
+  outlineImage: {fileID: 2731282905833563453, guid: e8ef9aa6c28800c4e85841e7474c1f6a, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,6 +5035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 14
   craftImage: {fileID: 412006413}
+  outlineImage: {fileID: -4615704583188428299, guid: 94a60ac1545dc9b4baaf11cd733fcf56, type: 3}
 --- !u!1 &774666464
 GameObject:
   m_ObjectHideFlags: 0
@@ -5880,6 +5885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 5
   craftImage: {fileID: 2081527479}
+  outlineImage: {fileID: -3811993396291099606, guid: 54a1cbb2a0d268d48baa91411341d3c9, type: 3}
 --- !u!1 &950851522
 GameObject:
   m_ObjectHideFlags: 0
@@ -6292,6 +6298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 1
   craftImage: {fileID: 774666466}
+  outlineImage: {fileID: -3046410678905501957, guid: e28fe2a8131558c43bbe4ddaabbc6535, type: 3}
 --- !u!1 &1045487961
 GameObject:
   m_ObjectHideFlags: 0
@@ -6711,6 +6718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 15
   craftImage: {fileID: 1720665302}
+  outlineImage: {fileID: -2289432032043168183, guid: 5ee532b2c21ab8d4bb02069f897c2996, type: 3}
 --- !u!1 &1072326793
 GameObject:
   m_ObjectHideFlags: 0
@@ -7177,6 +7185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 7
   craftImage: {fileID: 1258233872}
+  outlineImage: {fileID: -8778296470706960783, guid: fb275be31a209ca43907dce5bdb712b7, type: 3}
 --- !u!1 &1097841675
 GameObject:
   m_ObjectHideFlags: 0
@@ -8852,6 +8861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 12
   craftImage: {fileID: 1235058441}
+  outlineImage: {fileID: 556726841061669812, guid: 05c79fa1cbd7bd74ca44692649244229, type: 3}
 --- !u!1 &1477424499
 GameObject:
   m_ObjectHideFlags: 0
@@ -9119,6 +9129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 9
   craftImage: {fileID: 1425771579}
+  outlineImage: {fileID: -308129333222537469, guid: a5e26d200cd7dd24a94bc717ea7997a0, type: 3}
 --- !u!1 &1496876298
 GameObject:
   m_ObjectHideFlags: 0
@@ -9530,6 +9541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 11
   craftImage: {fileID: 1454019666}
+  outlineImage: {fileID: -7255034609795616908, guid: b346c032a3b3a5c45956552284b2fb16, type: 3}
 --- !u!1 &1598718084
 GameObject:
   m_ObjectHideFlags: 0
@@ -10107,6 +10119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 13
   craftImage: {fileID: 727432559}
+  outlineImage: {fileID: 3907556633551525698, guid: eba040cbc01fc114a94d13ecc049fb40, type: 3}
 --- !u!1 &1646773212
 GameObject:
   m_ObjectHideFlags: 0
@@ -10847,6 +10860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 2
   craftImage: {fileID: 1259829795}
+  outlineImage: {fileID: -4671742217169089861, guid: 8173b3c4314eccb438909630d1a17a04, type: 3}
 --- !u!1 &1841827763
 GameObject:
   m_ObjectHideFlags: 0
@@ -11339,6 +11353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 8
   craftImage: {fileID: 1841827765}
+  outlineImage: {fileID: -1458737328070487739, guid: 03bd14279bbc5be428113d376d8078d7, type: 3}
 --- !u!1 &1913723712
 GameObject:
   m_ObjectHideFlags: 0
@@ -12274,6 +12289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resourceType: 6
   craftImage: {fileID: 335372399}
+  outlineImage: {fileID: -1971115508477431495, guid: bcd258b56444ce74ab217231dd36eae1, type: 3}
 --- !u!1 &2081527477
 GameObject:
   m_ObjectHideFlags: 0

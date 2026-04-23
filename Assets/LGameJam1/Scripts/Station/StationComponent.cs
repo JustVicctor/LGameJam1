@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 namespace LGameJam1.Scripts.Station
 {
+    [RequireComponent(typeof(SpriteRenderer))]
     public class StationComponent : MonoBehaviour
     {
         public ResourceType resourceType;
 
         public Image craftImage;
+
+        public Sprite outlineImage;
         
         [NonSerialized]
         public List<DraggableComponent> Workers;
@@ -53,6 +56,16 @@ namespace LGameJam1.Scripts.Station
         public void ShowCraft()
         {
             God.Hud.ShowCraftImage(craftImage);
+            if (God.DraggableS._currentSelected != null)
+                Destroy(God.DraggableS._currentSelected);
+            var outline = new GameObject();
+            var image = outline.AddComponent<SpriteRenderer>();
+            image.sprite = outlineImage;
+            image.sortingOrder = GetComponent<SpriteRenderer>().sortingOrder;
+            outline.transform.position = transform.position;
+            outline.transform.rotation = transform.rotation;
+            outline.transform.localScale = transform.localScale * 1f;
+            God.DraggableS._currentSelected = outline;
         }
 
         private void OnTickToCraft()
