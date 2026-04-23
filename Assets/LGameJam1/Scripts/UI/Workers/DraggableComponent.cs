@@ -32,8 +32,8 @@ namespace LGameJam1.Scripts.UI.Workers
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            God.DraggableS._currentDraggable = gameObject;
             _parentAfterDrag = transform.parent;
-            // transform.SetParent(transform.root);
             transform.SetAsLastSibling();
         }
 

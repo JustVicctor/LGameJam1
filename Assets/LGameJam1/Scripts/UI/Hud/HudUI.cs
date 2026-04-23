@@ -35,6 +35,7 @@ namespace LGameJam1.Scripts.UI.Hud
         public Image EnemyImage01;
         public Image EnemyImage02;
         public Image EnemyImage03;
+        public Image EnemyImage04;
 
         public Image WinScreen;
         public Image EndScreen;
@@ -92,6 +93,11 @@ namespace LGameJam1.Scripts.UI.Hud
                 case 2:
                 {
                     enemyImage = EnemyImage03;
+                    break;
+                }
+                case 3:
+                {
+                    enemyImage = EnemyImage04;
                     break;
                 }
             }

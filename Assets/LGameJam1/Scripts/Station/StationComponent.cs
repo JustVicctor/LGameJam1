@@ -88,6 +88,9 @@ namespace LGameJam1.Scripts.Station
 
         public void ShowCraft()
         {
+            if (God.DraggableS._currentDraggable != null)
+                return;
+            
             God.Hud.ShowCraftImage(craftImage);
             ResetSelected();
 
