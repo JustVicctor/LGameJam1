@@ -1573,7 +1573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 16
   craftImage: {fileID: 288500346}
 --- !u!1 &158555185
 GameObject:
@@ -4184,7 +4184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 2
+  resourceType: 4
   craftImage: {fileID: 79422894}
 --- !u!1 &428332757
 GameObject:
@@ -4818,7 +4818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 3
   craftImage: {fileID: 1748504395}
 --- !u!1 &456850402
 GameObject:
@@ -5674,7 +5674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 10
   craftImage: {fileID: 440031797}
 --- !u!1 &512756511
 GameObject:
@@ -8185,7 +8185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 14
   craftImage: {fileID: 412006413}
 --- !u!1 &743635069
 GameObject:
@@ -11020,7 +11020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 15
   craftImage: {fileID: 1720665302}
 --- !u!1 &1068317723
 GameObject:
@@ -11716,7 +11716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 7
   craftImage: {fileID: 1258233872}
 --- !u!1 &1097841675
 GameObject:
@@ -13233,8 +13233,6 @@ MonoBehaviour:
   defItem5: {fileID: 830733973}
   defItem6: {fileID: 1598718087}
   defItem7: {fileID: 359022641}
-  waveAtkText: {fileID: 0}
-  waveDefText: {fileID: 0}
   timerText: {fileID: 1313439305}
   EnemyImage01: {fileID: 335909731}
   EnemyImage02: {fileID: 605602341}
@@ -14448,7 +14446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 12
   craftImage: {fileID: 1235058441}
 --- !u!1 &1477424499
 GameObject:
@@ -14715,7 +14713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 9
   craftImage: {fileID: 1425771579}
 --- !u!1 &1480816669
 GameObject:
@@ -15326,7 +15324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 11
   craftImage: {fileID: 1454019666}
 --- !u!1 &1504203640
 GameObject:
@@ -16314,7 +16312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 13
   craftImage: {fileID: 727432559}
 --- !u!1 &1646773212
 GameObject:
@@ -17688,7 +17686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 2
   craftImage: {fileID: 1259829795}
 --- !u!1 &1828256025
 GameObject:
@@ -18275,7 +18273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 8
   craftImage: {fileID: 1841827765}
 --- !u!1 &1913723712
 GameObject:
@@ -19285,7 +19283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6129678b1ccb60e4a9d82f76cc431395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceType: 0
+  resourceType: 6
   craftImage: {fileID: 335372399}
 --- !u!1 &2051600908
 GameObject:

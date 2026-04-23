@@ -13,26 +13,151 @@ MonoBehaviour:
   m_Name: ResourceDB
   m_EditorClassIdentifier: 
   resources:
-  - type: 1
-    usage: 1
-    usagePower: 0
-    tickToCraft: 1
-    texture: {fileID: 2800000, guid: 6068823f269c40044ad7efec27c2bcb0, type: 3}
-    recipe: []
-    craftCount: 1
   - type: 2
     usage: 0
-    usagePower: 0
-    tickToCraft: 1
+    usagePower: 10
+    tickToCraft: 6
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe: []
+    craftCount: 1
+  - type: 6
+    usage: 0
+    usagePower: 60
+    tickToCraft: 5
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 2
+      count: 2
+    - type: 5
+      count: 1
+    craftCount: 1
+  - type: 4
+    usage: 0
+    usagePower: 20
+    tickToCraft: 6
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe: []
+    craftCount: 1
+  - type: 8
+    usage: 0
+    usagePower: 90
+    tickToCraft: 6
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 4
+      count: 3
+    craftCount: 1
+  - type: 10
+    usage: 0
+    usagePower: 220
+    tickToCraft: 6
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 8
+      count: 2
+    craftCount: 1
+  - type: 16
+    usage: 0
+    usagePower: 350
+    tickToCraft: 6
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 5
+      count: 1
+    - type: 6
+      count: 1
+    - type: 8
+      count: 2
+    craftCount: 1
+  - type: 13
+    usage: 0
+    usagePower: 70
+    tickToCraft: 5
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 12
+      count: 2
+    craftCount: 1
+  - type: 15
+    usage: 0
+    usagePower: 150
+    tickToCraft: 6
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 2
+      count: 2
+    - type: 13
+      count: 1
+    craftCount: 1
+  - type: 1
+    usage: 1
+    usagePower: 10
+    tickToCraft: 6
     texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
     recipe: []
     craftCount: 1
   - type: 5
-    usage: 0
-    usagePower: 0
-    tickToCraft: 1
+    usage: 1
+    usagePower: 20
+    tickToCraft: 5
     texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
     recipe:
     - type: 1
+      count: 1
+    craftCount: 1
+  - type: 11
+    usage: 1
+    usagePower: 80
+    tickToCraft: 5
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 5
+      count: 3
+    craftCount: 1
+  - type: 3
+    usage: 1
+    usagePower: 10
+    tickToCraft: 5
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe: []
+    craftCount: 1
+  - type: 7
+    usage: 1
+    usagePower: 40
+    tickToCraft: 6
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 3
+      count: 2
+    craftCount: 1
+  - type: 9
+    usage: 1
+    usagePower: 400
+    tickToCraft: 6
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 7
+      count: 1
+    - type: 6
+      count: 2
+    - type: 8
+      count: 2
+    craftCount: 1
+  - type: 12
+    usage: 1
+    usagePower: 20
+    tickToCraft: 5
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe: []
+    craftCount: 1
+  - type: 14
+    usage: 1
+    usagePower: 150
+    tickToCraft: 5
+    texture: {fileID: 2800000, guid: 767e478817e04f541907aad3c216b462, type: 3}
+    recipe:
+    - type: 3
+      count: 2
+    - type: 13
       count: 1
     craftCount: 1

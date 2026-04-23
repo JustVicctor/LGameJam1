@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: WaveDB
   m_EditorClassIdentifier: 
   waves:
-  - WaveAtk: 12
-    WaveDef: 5
-    WaveTime: 31
-  - WaveAtk: 72
-    WaveDef: 36
+  - WaveAtk: 70
+    WaveDef: 50
+    WaveTime: 30
+  - WaveAtk: 360
+    WaveDef: 360
     WaveTime: 60
-  - WaveAtk: 378
-    WaveDef: 151
+  - WaveAtk: 1510
+    WaveDef: 2270
     WaveTime: 90

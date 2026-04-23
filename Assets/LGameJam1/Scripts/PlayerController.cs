@@ -26,31 +26,34 @@ namespace LGameJam1.Scripts
         
         private void Start()
         {
-            God.EventS.GameStarted();
-            God.EventS.timerChanged();
-            God.EventS.atkItemChanged();
-            God.EventS.defItemChanged();
             God.EventS.waveStarted();
         }
         
         private void OnWaveEnded()
         {
-            God.TimerS.enabled = false;
-            
             God.StorageS.GetOverall(out uint atk, out var def);
             var wave = God.WaveS.GetWave();
 
-            var atkTTK = wave.WaveDef / Math.Max(atk, 1);
-            var usrTTK = def / Math.Max(wave.WaveAtk, 1);
+            var atkTTK = (float)wave.WaveDef / (float)Math.Max(atk, 1);
+            var usrTTK = (float)def / (float)Math.Max(wave.WaveAtk, 1);
 
             if (usrTTK > atkTTK)
+            {
                 God.SceneS.ShowWin();
+                God.EventS.waveStarted();
+            }
             else
+            {
                 God.SceneS.ShowEnd();
+                God.EventS.waveStarted();
+            }
         }
 
         private void OnWaveStarted()
         {
+            God.EventS.atkItemChanged();
+            God.EventS.defItemChanged();
+            God.EventS.timerChanged();
         }
     }
 }

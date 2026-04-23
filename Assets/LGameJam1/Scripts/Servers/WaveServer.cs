@@ -1,4 +1,5 @@
-﻿using LGameJam1.Scripts.Wave;
+﻿using System;
+using LGameJam1.Scripts.Wave;
 using UnityEngine;
 
 namespace LGameJam1.Scripts.Servers
@@ -8,6 +9,7 @@ namespace LGameJam1.Scripts.Servers
         [SerializeField]
         public WaveDB waveDB;
         
+        [NonSerialized]
         public int curWave = 0;
         
         private void Awake()
@@ -29,6 +31,10 @@ namespace LGameJam1.Scripts.Servers
 
         public Wave.Wave GetWave()
         {
+            if (curWave == 3)
+            {
+                // TODO: WIN
+            }
             return waveDB.waves[curWave];
         }
     }

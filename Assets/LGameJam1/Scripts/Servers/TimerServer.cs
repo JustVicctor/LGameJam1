@@ -26,22 +26,22 @@ namespace LGameJam1.Scripts.Servers
 
         private void OnEnable()
         {
-            God.EventS.GameStarted += OnGameStarted;
-            God.EventS.GameEnded += OnGameEnded;
             God.EventS.waveStarted += OnWaveStarted;
+            God.EventS.waveEnded += OnWaveEnded;
         }
 
         private void OnDisable()
         {
-            God.EventS.GameStarted -= OnGameStarted;
-            God.EventS.GameEnded -= OnGameEnded;
             God.EventS.waveStarted -= OnWaveStarted;
+            God.EventS.waveEnded -= OnWaveEnded;
         }
 
         private void OnWaveStarted()
         {
             var wave = God.WaveS.GetWave();
             tickAmount = wave.WaveTime;
+            active = true;
+            curTick = 0;
             God.EventS.timerChanged();
         }
 
@@ -58,22 +58,22 @@ namespace LGameJam1.Scripts.Servers
                 curTick++;
                 if (curTick >= tickAmount)
                 {
-                    God.EventS.waveEnded();
-                    curTick = 0;
+                    active = false;
                     God.WaveS.UpWaves();
+                    God.EventS.waveEnded();
                 }
                 timer = 0;
             }
         }
-        
-        public void OnGameStarted()
-        {
-            active = true;
-        }
 
-        public void OnGameEnded()
+        private void OnWaveEnded()
         {
             active = false;
+        }
+
+        public void ResetTimers()
+        {
+            curTick = 0;
         }
     }
 }

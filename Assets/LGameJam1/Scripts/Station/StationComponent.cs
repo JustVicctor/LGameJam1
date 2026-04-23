@@ -61,12 +61,10 @@ namespace LGameJam1.Scripts.Station
                 return;
             
             _curTickToCraft++;
-            Debug.Log(_curTickToCraft);
             if (_curTickToCraft == _resource.tickToCraft)
             {
                 _curTickToCraft = 0;
                 DoCraft();
-                Debug.Log("Crafted");
             }
         }
 
