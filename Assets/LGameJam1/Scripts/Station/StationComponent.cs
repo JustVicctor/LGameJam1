@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using LGameJam1.Scripts.UI.Workers;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace LGameJam1.Scripts.Station
 {
     public class StationComponent : MonoBehaviour
     {
         public ResourceType resourceType;
+
+        public Image craftImage;
         
         [NonSerialized]
         public List<DraggableComponent> Workers;
@@ -45,6 +48,11 @@ namespace LGameJam1.Scripts.Station
             {
                 _isCrafted = true;
             }
+        }
+
+        public void ShowCraft()
+        {
+            God.Hud.ShowCraftImage(craftImage);
         }
 
         private void OnTickToCraft()

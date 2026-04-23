@@ -22,7 +22,8 @@ namespace LGameJam1.Scripts.Station
         Mana,
         Spell,
         Golem,
-        Rune
+        Rune,
+        Bow
     }
 
     [Serializable]

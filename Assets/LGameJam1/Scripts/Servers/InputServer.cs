@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using LGameJam1.Scripts.Helpers;
+using LGameJam1.Scripts.Station;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace LGameJam1.Scripts.Servers
@@ -31,6 +33,14 @@ namespace LGameJam1.Scripts.Servers
         {
             if (God.DraggableS._currentDraggable != null)
                 return;
+            
+            var go = SceneHelpers.RayCastToWorld();
+            if (go != null)
+            {
+                var station = go.GetComponent<StationComponent>();
+                if (station != null)
+                    station.ShowCraft();
+            }
         }
     }
 }

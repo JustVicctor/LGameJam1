@@ -12,6 +12,11 @@ namespace LGameJam1.Scripts.Servers
         public Action DayEnd = delegate { };
         
         public Action GameEnded = delegate { };
+        
+        public Action atkItemChanged = delegate { };
+        public Action defItemChanged = delegate { };
+        public Action timerChanged = delegate { };
+        public Action waveChanged = delegate { };
 
         private void Awake()
         {

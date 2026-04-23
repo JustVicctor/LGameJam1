@@ -11,7 +11,8 @@ namespace LGameJam1.Scripts.UI.Storage
 
         private void FixedUpdate()
         {
-            Text.text = God.StorageS.GetResourceCount(ResourceType).ToString();
+            God.StorageS.GetResourceCountAndValue(ResourceType, out uint count, out var power);
+            Text.text = count.ToString();
         }
     }
 }

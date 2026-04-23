@@ -29,6 +29,10 @@ namespace LGameJam1.Scripts
         private void Start()
         {
             God.EventS.GameStarted();
+            God.EventS.timerChanged();
+            God.EventS.atkItemChanged();
+            God.EventS.defItemChanged();
+            God.EventS.waveChanged();
         }
     }
 }

@@ -1,4 +1,5 @@
 using LGameJam1.Scripts.Servers;
+using LGameJam1.Scripts.UI.Hud;
 using UnityEngine;
 
 namespace LGameJam1.Scripts
@@ -12,7 +13,9 @@ namespace LGameJam1.Scripts
         public static DBServer DBS;
         public static TimerServer TimerS;
         public static StorageServer StorageS;
+        public static WaveServer WaveS { get; set; }
         
         public static PlayerController Player;
+        public static HudUI Hud;
     }
 }
